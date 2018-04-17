@@ -1,6 +1,10 @@
 .idea/
 build/
 out/
+web/bootstrap.css
+web/bootstrap-select.css
+web/bootstrap-toggle.css
+web/popper.js
 .settings/
 .classpath
 .project
