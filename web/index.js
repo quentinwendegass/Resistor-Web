@@ -16,7 +16,6 @@ $(document).ready(function () {
     $("input[type='submit']").click(function (e) {
         e.preventDefault();
         var value = $("#value").val();
-
         var numericValue = "";
         for(var i = 0; i < value.length; i++){
             var digit = value.charAt(i);
@@ -54,6 +53,8 @@ $(document).ready(function () {
 
         if(temp.toString().length > 0)
             value = temp;
+        else
+            value = numericValue;
 
         if($("#rings").prop('checked')){
             if(numericValue.toString().length < 3){
@@ -62,7 +63,7 @@ $(document).ready(function () {
                 $('img').attr("src", "");
             }else{
                 $('#value').removeClass("is-invalid");
-                $('img').attr("src", "ResistorServlet?value=" + numericValue + "&tolerance=" + $("#tolerance").val() + "&fiveRings=true");
+                $('img').attr("src", "resistor.php?value=" + numericValue + "&tolerance=" + $("#tolerance").val() + "&fiveRings=true");
                 $('#value-showcase').html(value + "&#8486;");
             }
         }else{
@@ -72,7 +73,7 @@ $(document).ready(function () {
                 $('img').attr("src", "");
             }else{
                 $('#value').removeClass("is-invalid");
-                $('img').attr("src", "ResistorServlet?value=" + numericValue + "&tolerance=" + $("#tolerance").val() + "&fiveRings=false");
+                $('img').attr("src", "resistor.php?value=" + numericValue + "&tolerance=" + $("#tolerance").val() + "&fiveRings=false");
                 $('#value-showcase').html(value + "&#8486;");
             }
         }

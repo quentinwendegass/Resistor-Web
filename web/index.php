@@ -1,8 +1,7 @@
-<%@ page import="at.htlklu.resistor.ResistorServlet" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html class="h-100">
 <head>
+    <script src="resistor.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="index.js" type="application/javascript"></script>
@@ -69,7 +68,6 @@
                 <h3 id="value-showcase" class="w-100 text-center"></h3>
                 <img class="w-100" alt="" src="">
             </div>
-
         </div>
     </div>
 </div>
