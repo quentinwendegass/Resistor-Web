@@ -8,7 +8,12 @@
     width: 100px;
 }
 
-@media only screen and (width: 600px) {
-.row{
-    height: auto;
-}}
+#value-showcase{
+    color: #1d2124;
+}
+
+@media only screen and (max-width: 768px) {
+    .hidden {
+        display: none !important;
+    }
+}

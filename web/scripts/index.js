@@ -61,20 +61,24 @@ $(document).ready(function () {
                 $('#value').addClass("is-invalid");
                 $('#value-showcase').html("");
                 $('img').attr("src", "");
+                $('#showcase').addClass("hidden");
             }else{
                 $('#value').removeClass("is-invalid");
                 $('img').attr("src", "resistor.php?value=" + numericValue + "&tolerance=" + $("#tolerance").val() + "&fiveRings=true");
                 $('#value-showcase').html(value + "&#8486;");
+                $('#showcase').removeClass("hidden");
             }
         }else{
             if(numericValue.toString().length < 2){
                 $('#value').addClass("is-invalid");
                 $('#value-showcase').html("");
                 $('img').attr("src", "");
+                $('#showcase').addClass("hidden");
             }else{
                 $('#value').removeClass("is-invalid");
                 $('img').attr("src", "resistor.php?value=" + numericValue + "&tolerance=" + $("#tolerance").val() + "&fiveRings=false");
                 $('#value-showcase').html(value + "&#8486;");
+                $('#showcase').removeClass("hidden");
             }
         }
     });

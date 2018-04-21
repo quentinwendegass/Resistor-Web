@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-100">
+<html class="h-100 bg-light">
 <head>
     <script src="scripts/jquery-3.3.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
@@ -14,14 +14,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Resistor Showcase</title>
 </head>
-<body class="bg-primary">
+<body class="bg-light">
 
 <nav class="navbar bg-primary navbar-dark sticky-top">
     <a class="navbar-brand ml-3 text-md-left text-center w-100" href="#">Resistor Showcase</a>
 </nav>
 
-<div class="container-fluid">
-    <div class="row h-100">
+<div class="container-fluid bg-info">
+    <div class="row h-100 btn-primary">
         <div class="col-md-4 bg-dark pt-5 pb-5">
             <form action="" method="get">
                 <div class="input-group mb-3">
@@ -64,7 +64,7 @@
                 <input class="btn btn-block btn-primary mt-5" type="submit" value="Show Resistor">
             </form>
         </div>
-        <div class="col-md-8 bg-light d-flex">
+        <div class="col-md-8 bg-light d-flex hidden" id="showcase">
             <div class="w-100 m-auto">
                 <h3 id="value-showcase" class="w-100 text-center"></h3>
                 <img class="w-100" alt="" src="">
